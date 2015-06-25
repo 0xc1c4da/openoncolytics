@@ -1,0 +1,58 @@
+Sequenced(downloaded) strains
+	adeno1.fasta(Human adenovirus type 1 subgroup C)  
+		http://www.ncbi.nlm.nih.gov/nuccore/33330439?report=genbank
+	adenovirus2.fasta(Adenovirus type 2)
+		http://www.ncbi.nlm.nih.gov/nuccore/J01917.1   
+	adeno3.fasta(Human adenovirus type 3)
+		http://www.ncbi.nlm.nih.gov/nuccore/78059380?report=fasta
+	adeno5.fasta(Human adenovirus 5)
+		http://www.ncbi.nlm.nih.gov/nuccore/56160529?report=genbank5    
+	BColo-Ad1.fasta(Human adenovirus B strain ColoAd1)
+		http//www.ncbi.nlm.nih.gov/nuccore/160857876?report=genbank	
+Modified strains
+	CG0070
+		Input:adeno5.fasta
+		Changes:hE2Fpromoter+/hGM-CSF+/E3-
+		Output:CG0070.fasta
+	INGN007
+		Input:adeno5.fasta
+		Changes: E3-/ADP+
+		Output:INGN007.fasta
+	CGTG102(Ad5/3-D24-GMCSF)
+		Input:delta24.fasta
+		Changes:pre-CGTG102.ape ->965bpE3-/hGM-CSF+
+		Output:	CGTG102.fasta         
+	ONYX-015
+		Input:1-21,562bp adeno5.fasta+21,607-35937adenovirus2.fasta
+		Changes:pre-ONYX-015.ape-> delE1B2496to3,323/C->T2022
+		Output:	ONYX-015.fasta
+	GC7870
+		Input:adeno5.fasta
+		Changes:pre7870.ape ->PB promoter for E1A/PSA promoter for E1B
+		Output:	GC7870.fasta       
+	delta24
+		Input:adeno5.fasta
+		Changes: nt923 to 946-
+		Output:	delta24.fasta   
+	H101.fasta
+		Input:adeno5.fasta
+		Changes: E1B55K-
+		Output:CG0070.fasta          
+	DNX-2401
+		Input:delta24.fasta
+		Changes:pre2401.ape ->RGD-4C in fiber
+		Output:	DNX-2401.fasta 
+	ICOVIR-05
+		Input:DNX-2401.fasta
+		Changes: DM1+/E2F++/Kozak+
+		Output:	ICOVIR-05.fasta      
+Uncertain strains
+	GC7060(CN706)
+		Input:adeno5.fasta
+		Changes:pre-GC7060.ape ->PSAenhancer&promoter+/E3-
+		Output:GC7060.fasta
+		*the 76bp of multiple cloning sites between enhancer and promoter are inherited from the BSKSII+ vector whose sequence wasn't found, instead pBluscript sequence used
+	VCN-01
+		Input:delta24.fasta
+		Changes: E2F.Spe+/90KKTK93(fiber)/PH20+
+		Output:VCN-01.fasta

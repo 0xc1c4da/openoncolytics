@@ -1,0 +1,40 @@
+Sequenced(downloaded) strains
+	HSV1.fasta(Human herpesvirus 1)  
+		http://www.ncbi.nlm.nih.gov/nuccore/NC_001806.1
+	Glasgow.fasta(Human herpesvirus 1 strain 17)
+		http://www.ncbi.nlm.nih.gov/nuccore/353260843
+	HSV1-F.fasta(Human herpesvirus 1 strain F)
+		http://www.ncbi.nlm.nih.gov/nuccore/290766003
+	HF-partial.fasta(Human herpesvirus 1 strain HF clone 10)
+		http://www.ncbi.nlm.nih.gov/nuccore/114318788	
+Modified strains
+	G207
+		Input:HSV1-F.fasta
+		Changes:pre-G207.ape	->ICP34.5--/ICP6-
+		Output:	G207.fasta 
+	hGM-CSFHerpesSimplexVirus(DISC HSV)
+		Input:HSV1.fasta
+		Changes:pre-DISC.ape ->glycoproteinH-/hGMCSF+
+		Output:	hGM-CSFHerpesSimplexVirus.fasta 
+	M032
+		Input:HSV1-F.fasta
+		Changes:pre-M032.ape	->134.5-/p40.IRES.p35+
+		Output:M032.fasta
+	G47delta
+		Input:G207.fasta
+		Changes:pre-G47delta.ape	->alpha47-/LacZ+(ICP6)   
+		Output:	G47delta.fasta  
+	HSV1716 
+		Input:Glasgow.fasta
+		Changes:pre-HSV1716.ape	->134.5-(partial)
+		Output:HSV1716.fasta                   
+	NV1020
+		Input:HSV1-F.fasta
+		Changes:pre-NV1020.ape	->UL56-/UL24-(partial)/HSV1TK+
+		Output:NV1020.fasta 
+Uncertain strains
+	OncoVexModel
+	     	Input:HSV1.fasta
+		Changes:pre-OncoVex.ape	->ICP47-/ICP34.5-/CMVpromoter.hGMCSF.pA+
+		Output:	OncoVexModel.fasta     
+		*should have been constructed on JS1 strain, but it isn't sequenced

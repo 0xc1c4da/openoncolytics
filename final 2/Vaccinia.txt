@@ -1,0 +1,60 @@
+Sequenced(downloaded) strains
+	CVA.fasta(Chorioallantois Vaccine Ankara)
+		http//www.ncbi.nlm.nih.gov/nuccore/160857876?report=genbank
+	Copenhagen.fasta(Copenhagen vaccinia)
+		http//www.ncbi.nlm.nih.gov/nuccore/335317
+	Lister.fasta(Lister vaccinia strain)
+		http//www.ncbi.nlm.nih.gov/nuccore/56713624
+	Western.fasta(Western reserve)
+		http//www.ncbi.nlm.nih.gov/nuccore/29692106
+	GLV-1h68.fasta(clinical grade GLV-1h68)
+		http//www.ncbi.nlm.nih.gov/nuccore/167412463
+	Ankara.fasta(Modified vaccinia Ankara)
+		http//www.ncbi.nlm.nih.gov/nuccore/2772662	
+Modified strains
+	NYVAC  (vP866)
+		Input:Copenhagen.fasta
+		Changes: pre-NYVAC.ape ->C7L:I4L-/J2R-/A26L-/A56R-/B14R-/B13R-
+		Output:NYVAC.fasta	
+	vvDD-CDSR (JX-929)
+		Input:Western.fasta
+		Changes: pre-JX929.ape ->TK-/growth factor-
+		Output:JX-929.fasta
+	JX-795
+		Input:Western.fasta
+		Changes:pre-JX795.ape ->TK−/B18R−/IFN-β+
+		Output:JX-795.fasta
+	GLV-1h153
+		Input:GLV-1h68.fasta
+		Changes:preGLV-1h153.ape ->gusA-/hNIS+
+		Output:GLV-1h153.fasta
+	GLV-1h99
+		Input:GLV-1h68.fasta
+		Changes:preGLV-1h99.ape ->luciferase-/hNET+
+		Output:GLV-1h99.fasta
+	GLV-1h70
+		Input:GLV-1h68.fasta
+		Changes:gusA-
+		Output:GLV-1h70.fasta 
+	GLV-1h71
+		Input:GLV-1h68.fasta
+		Changes:luciferase-
+		Output:GLV-1h71.fasta
+	GLV-1h72
+		Input:GLV-1h68.fasta
+		Changes:lacZ-
+		Output:GLV-1h72.fasta
+	GLV-1h73
+		Input:GLV-1h170.fasta
+		Changes:gusA-/luciferase-
+		Output:GLV-1h73.fasta
+	GLV-1h74
+		Input:GLV-1h170.fasta
+		Changes:gusA-/luciferase-/lacZ-
+		Output:GLV-1h74.fasta
+Uncertain strains
+	JX-594
+		Input:Vaccinia.fasta(western) 
+		Changes:7.5promoter+/TK-/hGM-CSF+/lacZ+
+		Output:JX-594m.fasta
+		*should have been constructed on Wyeth strain, but it isn't sequenced
